@@ -29,6 +29,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-import "./globals.css";
-import { Toaster } from "@/hooks/use-toast";
