@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Heart, Moon, Sun, Monitor } from "lucide-react";
+import { Heart, Moon, Sun, Monitor, Github } from "lucide-react";
 import { useTheme } from "@/context/theme-context";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -125,6 +125,14 @@ export default function Header() {
               )}
             </motion.div>
             <span className="ml-1">Wishlist</span>
+          </Link>
+          <Link
+            href={"https://github.com/sam-shubham/car-finder-ecommerce"}
+            target="_blank"
+          >
+            <button className="flex items-center rounded-md w-full border border-[#fff2]  aspect-square px-2 text-sm hover:bg-secondary transition-colors">
+              <Github className="h-4 w-4" />
+            </button>
           </Link>
         </div>
       </div>
